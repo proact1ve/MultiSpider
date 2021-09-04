@@ -27,10 +27,6 @@ def get_url(name_list, link_list):
             name_list.append(name)
             print(name)
 
-
-# In[56]:
-
-
 name_list = []
 link_list = []
 get_url(name_list, link_list)
@@ -61,10 +57,6 @@ browser = webdriver.Chrome('C:/Users/Noah.Suming/chromedriver.exe', chrome_optio
 browser.maximize_window()#浏览器窗口最大化
 browser.implicitly_wait(10)#隐形等待10秒
 
-
-# In[83]:
-
-
 url = "http://www.72dj.com"
 real_link = []
 for link in link_list:
@@ -78,10 +70,6 @@ for link in link_list:
     browser.back()
 browser.close()
 browser.quit()
-
-
-# In[87]:
-
 
 print(real_link)
 
